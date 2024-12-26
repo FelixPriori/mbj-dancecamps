@@ -387,7 +387,6 @@ input[type='submit']:hover {
 }
 
 #row_i119817_Terms,
-#row_p126276_Tourisme,
 #row_i119873_Privacy,
 #row_i126295_Volunteering,
 #row_i119921_Allergies,
@@ -429,7 +428,6 @@ input[type='submit']:hover {
 }
 
 #row_i119817_Terms .inputcell,
-#row_p126276_Tourisme .itemdescriptioncell,
 #row_i119873_Privacy .inputcell,
 #row_i126295_Volunteering .itemdescriptioncell,
 #row_i119921_Allergies .itemdescriptioncell,
@@ -439,7 +437,6 @@ input[type='submit']:hover {
 }
 
 #row_i119817_Terms .inputcell span p,
-#row_p126276_Tourisme .itemdescriptioncell span p,
 #row_i119873_Privacy .inputcell span p,
 #row_i126295_Volunteering .itemdescriptioncell span p,
 #row_i126298_Timeframe .itemdescriptioncell span p {
@@ -453,7 +450,6 @@ input[type='submit']:hover {
 }
 
 #row_i119817_Terms .inputcell,
-#row_p126276_Tourisme .inputcell,
 #row_i119873_Privacy .inputcell,
 #row_i126295_Volunteering .inputcell,
 #row_i126298_Timeframe .inputcell,
