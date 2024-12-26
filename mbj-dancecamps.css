@@ -423,6 +423,28 @@ input[type='submit']:hover {
 	gap: var(--spacing-sm);
 }
 
+/*TL;DR*/
+#row_TracksTLDR {
+	padding: 1rem;
+	border: 2px dotted var(--color-primary);
+	border-radius: var(--border-radius);
+	margin-bottom: var(--spacing-md);
+}
+
+#row_TracksTLDR p {
+	font-weight: normal;
+	text-align: center;
+	margin: 0;
+}
+#row_TracksTLDR .tracks__title {
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+#row_TracksTLDR .tracks__subtitle {
+	font-weight: bold;
+	margin-top: 0.75rem;
+}
+
 /* ERROR */
 
 .itemdescriptioncell .errorText span p::before {
