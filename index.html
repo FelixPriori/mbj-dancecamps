@@ -1239,6 +1239,7 @@
 										name="i126272_LeadorFollow"
 										id="i126272_LeadorFollow_Follower"
 										value="Follower"
+										verify=".+"
 									/><label
 										for="i126272_LeadorFollow_Follower"
 										id="label_i126272_LeadorFollow_Follower"
@@ -2217,15 +2218,12 @@
 								name="p126307_Strictly"
 								id="p126307_Strictly"
 								value="60580_1"
+								checked=""
 							/><span class="pricesuffix"> ($40.00CAD)</span>
 						</div>
 					</div>
 
-					<div
-						id="row_PartnerInfo"
-						class="captionWrapper evenRow s26451"
-						style="display: none"
-					>
+					<div id="row_PartnerInfo" class="captionWrapper evenRow s26451">
 						<div class="captioncell informationInput" id="info_PartnerInfo">
 							<span title=""
 								><p>
@@ -2243,11 +2241,7 @@
 						</div>
 					</div>
 
-					<div
-						id="row_i126309_StrictlyPartner"
-						class="fieldwrapper"
-						style="display: none"
-					>
+					<div id="row_i126309_StrictlyPartner" class="fieldwrapper">
 						<div class="itemdescriptioncell">
 							<span
 								title="Enter your strictly partner's name
@@ -2262,6 +2256,7 @@
 								type="text"
 								name="i126309_StrictlyPartner"
 								id="i126309_StrictlyPartner"
+								checked=""
 							/><span class="pricesuffix"></span>
 						</div>
 					</div>
@@ -2747,7 +2742,11 @@
 						</div>
 					</div>
 
-					<div id="row_i126335_Paid" class="fieldwrapper">
+					<div
+						id="row_i126335_FreeVolunteer"
+						class="fieldwrapper"
+						style="display: none"
+					>
 						<div class="itemdescriptioncell">
 							<span
 								title="Check the box if you would like to get a discount for volunteering
@@ -2759,8 +2758,8 @@
 							<input
 								class="checkboxinput"
 								type="checkbox"
-								name="i126335_Paid"
-								id="i126335_Paid"
+								name="i126335_FreeVolunteer"
+								id="i126335_FreeVolunteer"
 								value="1"
 							/><span class="pricesuffix"></span>
 						</div>
@@ -2784,24 +2783,38 @@
 													<strong>English</strong>
 												</p>
 												<p class="tab__content-paragraph">
-													You can get a discount by volunteering for MTL BAL
-													JAM! Commit to a minimum of 4 hours of volunteering
-													during the weekend, and $15.00CAD per hour of work
-													will be reimbursed after the event&nbsp;(or if you are
-													part of the Safety &amp; Inclusion department, $60.00
-													per shift).
+													You can choose to volunteer for free, or to get a
+													discount while volunteering for MTL BAL JAM!
+												</p>
+												<p class="tab__content-paragraph">
+													<strong>Free</strong>: volunteer between 2 to 6 hours
+													throughout the weekend.
+												</p>
+												<p class="tab__content-paragraph">
+													<strong>With discount</strong>: minimum of 4 hours and
+													a maximum of 8 hours of volunteering during the
+													weekend. $15.00CAD per hour of work will be reimbursed
+													after the event (or if you are part of the Safety,
+													Consent &amp; Inclusion department, $60.00 per shift).
 												</p>
 												<p class="tab__content-subtitle">
 													<strong>Français</strong>
 												</p>
 												<p class="tab__content-paragraph">
-													Vous pouvez économiser sur votre inscription en
-													faisant du bénévolat pour le MTL BAL JAM !
-													Engagez-vous pour un minimum de 4h durant le weekend
-													et un remboursement de 15.00$ CAD par heures
-													travaillées sera effectué après l'événement&nbsp;(ou
-													si vous faites partie du département Sécurité et
-													inclusion 60,00$ par shift).
+													Vous avez le choix de faire du bénévolat gratuitement
+													ou d’économiser sur votre inscription en travaillant
+													pour le MTL BAL JAM !
+												</p>
+												<p class="tab__content-paragraph">
+													<strong>Gratuitement</strong> : entre 2 à 6 h de
+													bénévolat durant le weekend.
+												</p>
+												<p class="tab__content-paragraph">
+													<strong>Avec rabais</strong> : minimum 4h et maximum
+													de 8h durant le weekend. Un remboursement de 15.00$
+													CAD par heures travaillées sera effectué après
+													l'événement (ou si vous faites partie du département
+													sécurité, consentement et inclusion 60,00$ par shift).
 												</p>
 											</div>
 										</div>
@@ -2814,7 +2827,7 @@
 					<div
 						id="row_i126296_Hours"
 						class="fieldwrapper editable"
-						style="display: block"
+						style="display: none"
 					>
 						<div class="itemdescriptioncell">
 							<span
@@ -2825,21 +2838,24 @@
 						</div>
 						<div class="inputcell">
 							<select name="i126296_Hours" id="i126296_Hours">
-								<option id="i126296_Hours_" value=""></option>
-								<option id="i126296_Hours_2" value="2">2h</option>
-								<option id="i126296_Hours_4" value="4">4h</option>
-								<option id="i126296_Hours_6" value="6">6h</option>
 								<option id="i126296_Hours_8" value="8">8h</option></select
 							><span class="pricesuffix"></span>
 						</div>
 					</div>
 
-					<div id="row_i126334_Availability" class="fieldwrapper">
+					<div
+						id="row_i126334_Availability"
+						class="fieldwrapper"
+						style="display: none"
+					>
 						<div class="itemdescriptioncell">
 							<span
 								title="Select your availability
 		Sélectionnez votre disponibilité"
-								><p>Availability | Disponibilité&nbsp;</p></span
+								><p>
+									Availability (select multiple) | Disponibilité (sélection
+									multiple)
+								</p></span
 							>
 						</div>
 						<div class="inputcell">
@@ -2847,16 +2863,7 @@
 								name="i126334_Availability[]"
 								id="i126334_Availability"
 								multiple="multiple"
-							>
-								<option id="i126334_Availability_Before" value="Before">
-									Before the event | Avant l'événement
-								</option>
-								<option id="i126334_Availability_During" value="During">
-									During the event | Pendant l'événement
-								</option>
-								<option id="i126334_Availability_After" value="After">
-									After the event | Après l'événement
-								</option></select
+							></select
 							><span class="pricesuffix"></span>
 						</div>
 					</div>
@@ -2864,14 +2871,14 @@
 					<div
 						id="row_i126297_Department"
 						class="fieldwrapper editable"
-						style="display: block"
+						style="display: none"
 					>
 						<div class="itemdescriptioncell">
 							<span
 								title="Select one or more department
 		Sélectionnez un ou plusieurs départements"
 								><p>
-									Department (Select multiple) | Département (Sélection
+									Department (select multiple) | Département (Sélection
 									multiple)
 								</p></span
 							>
@@ -2881,27 +2888,7 @@
 								name="i126297_Department[]"
 								id="i126297_Department"
 								multiple="multiple"
-							>
-								<option id="i126297_Department_reception" value="reception">
-									Reception | Réception
-								</option>
-								<option id="i126297_Department_maintenance" value="maintenance">
-									Maintenance | Entretien
-								</option>
-								<option id="i126297_Department_food" value="food">
-									Food | Nourriture
-								</option>
-								<option id="i126297_Department_errands" value="errands">
-									Errands &amp; driving | Courses et transport
-								</option>
-								<option id="i126297_Department_Bar" value="Bar">Bar</option>
-								<option
-									id="i126297_Department_saferspaces"
-									value="safer-spaces"
-								>
-									Security, Consent &amp; Inclusion | Sécurité, consentement et
-									inclus
-								</option></select
+							></select
 							><span class="pricesuffix"></span>
 						</div>
 					</div>
@@ -2909,14 +2896,13 @@
 					<div
 						id="row_DepartmentDetails"
 						class="captionWrapper oddRow s26452"
-						style="display: block"
+						style="display: none"
 					>
 						<div
 							class="captioncell informationInput"
 							id="info_DepartmentDetails"
 						>
-							<span
-								title="This information will be shown when the customer clicks on the title next to the input"
+							<span title=""
 								><div class="customdetails">
 									<div class="accordion">
 										<div class="tab">
@@ -3031,11 +3017,12 @@
 					<div
 						id="row_i126299_Notes"
 						class="fieldwrapper editable"
-						style="display: block"
+						style="display: none"
 					>
 						<div class="itemdescriptioncell">
 							<span
-								title="This information will be shown when the customer clicks on the title next to the input"
+								title="Enter any additional information that you wish to tell us.
+		Vous pouvez inscrire ici toute autre information que vous aimeriez nous donner"
 								><p>
 									Additional Information | Informations supplémentaires
 								</p></span
@@ -3066,7 +3053,8 @@
 					<div id="row_i126264_PaymentMethod" class="fieldwrapper">
 						<div class="itemdescriptioncell">
 							<span
-								title="This information will be shown when the customer clicks on the title next to the input"
+								title="Select your payment method
+		Sélectionnez votre méthode de paiement"
 								><p>Payment Method | Méthode de paiement</p></span
 							>
 						</div>
@@ -3113,8 +3101,7 @@
 							class="captioncell informationInput"
 							id="info_BankTransferInfo"
 						>
-							<span
-								title="This information will be shown when the customer clicks on the title next to the input"
+							<span title=""
 								><div class="customdetails">
 									<div class="accordion">
 										<div class="tab">
@@ -3177,7 +3164,8 @@
 					<div id="row_i126304_Confirmation" class="fieldwrapper">
 						<div class="itemdescriptioncell">
 							<span
-								title="This information will be shown when the customer clicks on the title next to the input"
+								title="Click on the checkbox to agree to the Terms &amp; Services and the Privacy Policy
+		Cochez la case pour accepter les conditions générales et la politique de confidentialité"
 								><div class="custom-terms">
 									<p class="custom-terms__important">
 										<strong>IMPORTANT</strong>
@@ -3229,7 +3217,8 @@
 					<div id="row_i126268_Submit" class="fieldwrapper">
 						<div class="itemdescriptioncell">
 							<span
-								title="This information will be shown when the customer clicks on the title next to the input"
+								title="Click on the button to submit your registration
+		Cliquez sur le bouton pour envoyer votre inscription"
 							></span>
 						</div>
 						<div class="inputcell">
@@ -3245,8 +3234,7 @@
 
 					<div id="row_questions" class="captionWrapper oddRow s26449">
 						<div class="captioncell informationInput" id="info_questions">
-							<span
-								title="This information will be shown when the customer clicks on the title next to the input"
+							<span title=""
 								><p style="text-align: center">
 									For any questions, comments or issues, please contact
 									<a href="mailto:mtlbaljam@campusbalboa.org"
@@ -3268,7 +3256,7 @@
 						type="hidden"
 						name="DupeCheck"
 						id="DupeCheck"
-						value="2a064f3a45910c65ad81e1aab2f52fe6"
+						value="12bc00484c6513e057e73040b15ecaef"
 					/>
 				</div>
 				<!-- layoutTable -->
@@ -3292,188 +3280,6 @@
 			}
 			$(document).ready(function () {
 				var optioncount = 0
-				$('#i126295_Volunteering').bind('mychange', function (event, triggers) {
-					if ($('#i126295_Volunteering').is(':checked')) {
-						//Show 126297  (Type: ), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#row_i126297_Department').show()
-						//Show o126297_102301  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#i126297_Department_reception')
-							.closest('select')
-							.attachOptions('#i126297_Department_reception')
-						//Show o126297_102302  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#i126297_Department_maintenance')
-							.closest('select')
-							.attachOptions('#i126297_Department_maintenance')
-						//Show o126297_102303  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#i126297_Department_food')
-							.closest('select')
-							.attachOptions('#i126297_Department_food')
-						//Show o126297_  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#i126297_Department_')
-							.closest('select')
-							.attachOptions('#i126297_Department_')
-						//Show o126297_102304  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#i126297_Department_errands')
-							.closest('select')
-							.attachOptions('#i126297_Department_errands')
-						//Show 126301  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
-
-						// i126301_DepartmentDetails
-
-						$('#row_DepartmentDetails').show()
-						//Show 126296  (Type: information), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#row_i126296_Hours').show()
-						//Show o126296_  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#i126296_Hours_')
-							.closest('select')
-							.attachOptions('#i126296_Hours_')
-						//Show o126296_102298  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#i126296_Hours_4')
-							.closest('select')
-							.attachOptions('#i126296_Hours_4')
-						//Show o126296_102299  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#i126296_Hours_6')
-							.closest('select')
-							.attachOptions('#i126296_Hours_6')
-						//Show o126296_102300  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#i126296_Hours_8')
-							.closest('select')
-							.attachOptions('#i126296_Hours_8')
-						//Show 126299  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#row_i126299_Notes').show()
-						//Show 126298  (Type: textarea), . showfunc = show(), hidefunc=hide(), effect = None
-						$('#row_').show()
-					} else {
-						// no match
-						//hide 126297  (Type: )
-						$('#i126297_Department option:selected').removeAttr('selected')
-						optioncount = 0
-						$('#i126297_Department option').each(function () {
-							if ($(this).attr('orig') == 'selected') {
-								$(this).attr('selected', 'selected')
-								optioncount++
-							}
-						})
-						if (optioncount == 0)
-							$('#i126297_Department option:first').attr('selected', 'selected')
-						$('#row_i126297_Department').hide()
-						$('#i126297_Department').checktrigger('mychange', ['both'])
-						//hide o126297_102301  (Type: multipleselect)
-
-						if ($('#i126297_Department_reception').attr('orig') == 'selected')
-							$('#i126297_Department_reception').attr('selected', 'selected')
-						else $('#i126297_Department_reception').removeAttr('selected')
-
-						$('#i126297_Department_reception')
-							.closest('select')
-							.detachOptions('#i126297_Department_reception')
-						$('#i126297_Department').checktrigger('mychange', ['both'])
-						//hide o126297_102302  (Type: multipleselect)
-
-						if ($('#i126297_Department_maintenance').attr('orig') == 'selected')
-							$('#i126297_Department_maintenance').attr('selected', 'selected')
-						else $('#i126297_Department_maintenance').removeAttr('selected')
-
-						$('#i126297_Department_maintenance')
-							.closest('select')
-							.detachOptions('#i126297_Department_maintenance')
-						$('#i126297_Department').checktrigger('mychange', ['both'])
-						//hide o126297_102303  (Type: multipleselect)
-
-						if ($('#i126297_Department_food').attr('orig') == 'selected')
-							$('#i126297_Department_food').attr('selected', 'selected')
-						else $('#i126297_Department_food').removeAttr('selected')
-
-						$('#i126297_Department_food')
-							.closest('select')
-							.detachOptions('#i126297_Department_food')
-						$('#i126297_Department').checktrigger('mychange', ['both'])
-						//hide o126297_  (Type: multipleselect)
-
-						if ($('#i126297_Department_').attr('orig') == 'selected')
-							$('#i126297_Department_').attr('selected', 'selected')
-						else $('#i126297_Department_').removeAttr('selected')
-
-						$('#i126297_Department_')
-							.closest('select')
-							.detachOptions('#i126297_Department_')
-						//hide o126297_102304  (Type: multipleselect)
-
-						if ($('#i126297_Department_errands').attr('orig') == 'selected')
-							$('#i126297_Department_errands').attr('selected', 'selected')
-						else $('#i126297_Department_errands').removeAttr('selected')
-
-						$('#i126297_Department_errands')
-							.closest('select')
-							.detachOptions('#i126297_Department_errands')
-						$('#i126297_Department').checktrigger('mychange', ['both'])
-						//hide 126301  (Type: multipleselect)
-
-						// i126301_DepartmentDetails
-
-						$('#row_DepartmentDetails').hide()
-						$('#i126301_DepartmentDetails').checktrigger('mychange', ['both'])
-						//hide 126296  (Type: information)
-						$('#i126296_Hours option:selected').removeAttr('selected')
-						optioncount = 0
-						$('#i126296_Hours option').each(function () {
-							if ($(this).attr('orig') == 'selected') {
-								$(this).attr('selected', 'selected')
-								optioncount++
-							}
-						})
-						if (optioncount == 0)
-							$('#i126296_Hours option:first').attr('selected', 'selected')
-						$('#row_i126296_Hours').hide()
-						$('#i126296_Hours').checktrigger('mychange', ['both'])
-						//hide o126296_  (Type: select)
-
-						if ($('#i126296_Hours_').attr('orig') == 'selected')
-							$('#i126296_Hours_').attr('selected', 'selected')
-						else $('#i126296_Hours_').removeAttr('selected')
-
-						$('#i126296_Hours_')
-							.closest('select')
-							.detachOptions('#i126296_Hours_')
-						//hide o126296_102298  (Type: select)
-
-						if ($('#i126296_Hours_4').attr('orig') == 'selected')
-							$('#i126296_Hours_4').attr('selected', 'selected')
-						else $('#i126296_Hours_4').removeAttr('selected')
-
-						$('#i126296_Hours_4')
-							.closest('select')
-							.detachOptions('#i126296_Hours_4')
-						$('#i126296_Hours').checktrigger('mychange', ['both'])
-						//hide o126296_102299  (Type: select)
-
-						if ($('#i126296_Hours_6').attr('orig') == 'selected')
-							$('#i126296_Hours_6').attr('selected', 'selected')
-						else $('#i126296_Hours_6').removeAttr('selected')
-
-						$('#i126296_Hours_6')
-							.closest('select')
-							.detachOptions('#i126296_Hours_6')
-						$('#i126296_Hours').checktrigger('mychange', ['both'])
-						//hide o126296_102300  (Type: select)
-
-						if ($('#i126296_Hours_8').attr('orig') == 'selected')
-							$('#i126296_Hours_8').attr('selected', 'selected')
-						else $('#i126296_Hours_8').removeAttr('selected')
-
-						$('#i126296_Hours_8')
-							.closest('select')
-							.detachOptions('#i126296_Hours_8')
-						$('#i126296_Hours').checktrigger('mychange', ['both'])
-						//hide 126299  (Type: select)
-						$('#i126299_Notes').val($('#i126299_Notes').attr('orig')) //here
-						$('#row_i126299_Notes').hide()
-						$('#i126299_Notes').checktrigger('mychange', ['both'])
-						//hide 126298  (Type: textarea)
-						$('#').val($('#').attr('orig')) //here
-						$('#row_').hide()
-					}
-				})
 				$('#i126270_Country').bind('mychange', function (event, triggers) {
 					if (
 						$('#i126270_Country')
@@ -4290,6 +4096,321 @@
 						$('#i126312_TracksTLDR').checktrigger('mychange', ['both'])
 					}
 				})
+				$('#i126295_Volunteering').bind('mychange', function (event, triggers) {
+					if ($('#i126295_Volunteering').is(':checked')) {
+						//Show 126334  (Type: information), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#row_i126334_Availability').show()
+						//Show o126334_102345  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126334_Availability_Before')
+							.closest('select')
+							.attachOptions('#i126334_Availability_Before')
+						//Show o126334_102346  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126334_Availability_During')
+							.closest('select')
+							.attachOptions('#i126334_Availability_During')
+						//Show o126334_102347  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126334_Availability_After')
+							.closest('select')
+							.attachOptions('#i126334_Availability_After')
+						//Show 126297  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#row_i126297_Department').show()
+						//Show o126297_102301  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126297_Department_reception')
+							.closest('select')
+							.attachOptions('#i126297_Department_reception')
+						//Show o126297_102302  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126297_Department_maintenance')
+							.closest('select')
+							.attachOptions('#i126297_Department_maintenance')
+						//Show o126297_102303  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126297_Department_food')
+							.closest('select')
+							.attachOptions('#i126297_Department_food')
+						//Show o126297_102304  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126297_Department_errands')
+							.closest('select')
+							.attachOptions('#i126297_Department_errands')
+						//Show o126297_102306  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126297_Department_saferspaces')
+							.closest('select')
+							.attachOptions('#i126297_Department_saferspaces')
+						//Show o126297_102307  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126297_Department_Bar')
+							.closest('select')
+							.attachOptions('#i126297_Department_Bar')
+						//Show 126301  (Type: multipleselect), . showfunc = show(), hidefunc=hide(), effect = None
+
+						// i126301_DepartmentDetails
+
+						$('#row_DepartmentDetails').show()
+						//Show 126296  (Type: information), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#row_i126296_Hours').show()
+						//Show o126296_BLANK  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126296_Hours_')
+							.closest('select')
+							.attachOptions('#i126296_Hours_')
+						//Show o126296_102298  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126296_Hours_4')
+							.closest('select')
+							.attachOptions('#i126296_Hours_4')
+						//Show o126296_102299  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126296_Hours_6')
+							.closest('select')
+							.attachOptions('#i126296_Hours_6')
+						//Show o126296_102300  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126296_Hours_8')
+							.closest('select')
+							.attachOptions('#i126296_Hours_8')
+						//Show o126296_102348  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#i126296_Hours_2')
+							.closest('select')
+							.attachOptions('#i126296_Hours_2')
+						//Show 126299  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#row_i126299_Notes').show()
+						//Show 126335  (Type: textarea), . showfunc = show(), hidefunc=hide(), effect = None
+						$('#row_i126335_FreeVolunteer').show()
+					} else {
+						// no match
+						// no hidearr
+						//hide 126334  (Type: checkbox)
+						$('#i126334_Availability option:selected').removeAttr('selected')
+						optioncount = 0
+						$('#i126334_Availability option').each(function () {
+							if ($(this).attr('orig') == 'selected') {
+								$(this).attr('selected', 'selected')
+								optioncount++
+							}
+						})
+						if (optioncount == 0)
+							$('#i126334_Availability option:first').attr(
+								'selected',
+								'selected',
+							)
+						$('#row_i126334_Availability').hide()
+						$('#i126334_Availability').checktrigger('mychange', ['both'])
+						//hide o126334_102345  (Type: multipleselect)
+
+						if ($('#i126334_Availability_Before').attr('orig') == 'selected')
+							$('#i126334_Availability_Before').attr('selected', 'selected')
+						else $('#i126334_Availability_Before').removeAttr('selected')
+
+						$('#i126334_Availability_Before')
+							.closest('select')
+							.detachOptions('#i126334_Availability_Before')
+						$('#i126334_Availability').checktrigger('mychange', ['both'])
+						//hide o126334_102346  (Type: multipleselect)
+
+						if ($('#i126334_Availability_During').attr('orig') == 'selected')
+							$('#i126334_Availability_During').attr('selected', 'selected')
+						else $('#i126334_Availability_During').removeAttr('selected')
+
+						$('#i126334_Availability_During')
+							.closest('select')
+							.detachOptions('#i126334_Availability_During')
+						$('#i126334_Availability').checktrigger('mychange', ['both'])
+						//hide o126334_102347  (Type: multipleselect)
+
+						if ($('#i126334_Availability_After').attr('orig') == 'selected')
+							$('#i126334_Availability_After').attr('selected', 'selected')
+						else $('#i126334_Availability_After').removeAttr('selected')
+
+						$('#i126334_Availability_After')
+							.closest('select')
+							.detachOptions('#i126334_Availability_After')
+						$('#i126334_Availability').checktrigger('mychange', ['both'])
+						//hide 126297  (Type: multipleselect)
+						$('#i126297_Department option:selected').removeAttr('selected')
+						optioncount = 0
+						$('#i126297_Department option').each(function () {
+							if ($(this).attr('orig') == 'selected') {
+								$(this).attr('selected', 'selected')
+								optioncount++
+							}
+						})
+						if (optioncount == 0)
+							$('#i126297_Department option:first').attr('selected', 'selected')
+						$('#row_i126297_Department').hide()
+						$('#i126297_Department').checktrigger('mychange', ['both'])
+						//hide o126297_102301  (Type: multipleselect)
+
+						if ($('#i126297_Department_reception').attr('orig') == 'selected')
+							$('#i126297_Department_reception').attr('selected', 'selected')
+						else $('#i126297_Department_reception').removeAttr('selected')
+
+						$('#i126297_Department_reception')
+							.closest('select')
+							.detachOptions('#i126297_Department_reception')
+						$('#i126297_Department').checktrigger('mychange', ['both'])
+						//hide o126297_102302  (Type: multipleselect)
+
+						if ($('#i126297_Department_maintenance').attr('orig') == 'selected')
+							$('#i126297_Department_maintenance').attr('selected', 'selected')
+						else $('#i126297_Department_maintenance').removeAttr('selected')
+
+						$('#i126297_Department_maintenance')
+							.closest('select')
+							.detachOptions('#i126297_Department_maintenance')
+						$('#i126297_Department').checktrigger('mychange', ['both'])
+						//hide o126297_102303  (Type: multipleselect)
+
+						if ($('#i126297_Department_food').attr('orig') == 'selected')
+							$('#i126297_Department_food').attr('selected', 'selected')
+						else $('#i126297_Department_food').removeAttr('selected')
+
+						$('#i126297_Department_food')
+							.closest('select')
+							.detachOptions('#i126297_Department_food')
+						$('#i126297_Department').checktrigger('mychange', ['both'])
+						//hide o126297_102304  (Type: multipleselect)
+
+						if ($('#i126297_Department_errands').attr('orig') == 'selected')
+							$('#i126297_Department_errands').attr('selected', 'selected')
+						else $('#i126297_Department_errands').removeAttr('selected')
+
+						$('#i126297_Department_errands')
+							.closest('select')
+							.detachOptions('#i126297_Department_errands')
+						$('#i126297_Department').checktrigger('mychange', ['both'])
+						//hide o126297_102306  (Type: multipleselect)
+
+						if ($('#i126297_Department_saferspaces').attr('orig') == 'selected')
+							$('#i126297_Department_saferspaces').attr('selected', 'selected')
+						else $('#i126297_Department_saferspaces').removeAttr('selected')
+
+						$('#i126297_Department_saferspaces')
+							.closest('select')
+							.detachOptions('#i126297_Department_saferspaces')
+						$('#i126297_Department').checktrigger('mychange', ['both'])
+						//hide o126297_102307  (Type: multipleselect)
+
+						if ($('#i126297_Department_Bar').attr('orig') == 'selected')
+							$('#i126297_Department_Bar').attr('selected', 'selected')
+						else $('#i126297_Department_Bar').removeAttr('selected')
+
+						$('#i126297_Department_Bar')
+							.closest('select')
+							.detachOptions('#i126297_Department_Bar')
+						$('#i126297_Department').checktrigger('mychange', ['both'])
+						//hide 126301  (Type: multipleselect)
+
+						// i126301_DepartmentDetails
+
+						$('#row_DepartmentDetails').hide()
+						$('#i126301_DepartmentDetails').checktrigger('mychange', ['both'])
+						//hide 126296  (Type: information)
+						$('#i126296_Hours option:selected').removeAttr('selected')
+						optioncount = 0
+						$('#i126296_Hours option').each(function () {
+							if ($(this).attr('orig') == 'selected') {
+								$(this).attr('selected', 'selected')
+								optioncount++
+							}
+						})
+						if (optioncount == 0)
+							$('#i126296_Hours option:first').attr('selected', 'selected')
+						$('#row_i126296_Hours').hide()
+						$('#i126296_Hours').checktrigger('mychange', ['both'])
+						//hide o126296_BLANK  (Type: select)
+
+						if ($('#i126296_Hours_').attr('orig') == 'selected')
+							$('#i126296_Hours_').attr('selected', 'selected')
+						else $('#i126296_Hours_').removeAttr('selected')
+
+						$('#i126296_Hours_')
+							.closest('select')
+							.detachOptions('#i126296_Hours_')
+						//hide o126296_102298  (Type: select)
+
+						if ($('#i126296_Hours_4').attr('orig') == 'selected')
+							$('#i126296_Hours_4').attr('selected', 'selected')
+						else $('#i126296_Hours_4').removeAttr('selected')
+
+						$('#i126296_Hours_4')
+							.closest('select')
+							.detachOptions('#i126296_Hours_4')
+						$('#i126296_Hours').checktrigger('mychange', ['both'])
+						//hide o126296_102299  (Type: select)
+
+						if ($('#i126296_Hours_6').attr('orig') == 'selected')
+							$('#i126296_Hours_6').attr('selected', 'selected')
+						else $('#i126296_Hours_6').removeAttr('selected')
+
+						$('#i126296_Hours_6')
+							.closest('select')
+							.detachOptions('#i126296_Hours_6')
+						$('#i126296_Hours').checktrigger('mychange', ['both'])
+						//hide o126296_102300  (Type: select)
+
+						if ($('#i126296_Hours_8').attr('orig') == 'selected')
+							$('#i126296_Hours_8').attr('selected', 'selected')
+						else $('#i126296_Hours_8').removeAttr('selected')
+
+						$('#i126296_Hours_8')
+							.closest('select')
+							.detachOptions('#i126296_Hours_8')
+						$('#i126296_Hours').checktrigger('mychange', ['both'])
+						//hide o126296_102348  (Type: select)
+
+						if ($('#i126296_Hours_2').attr('orig') == 'selected')
+							$('#i126296_Hours_2').attr('selected', 'selected')
+						else $('#i126296_Hours_2').removeAttr('selected')
+
+						$('#i126296_Hours_2')
+							.closest('select')
+							.detachOptions('#i126296_Hours_2')
+						$('#i126296_Hours').checktrigger('mychange', ['both'])
+						//hide 126299  (Type: select)
+						$('#i126299_Notes').val($('#i126299_Notes').attr('orig')) //here
+						$('#row_i126299_Notes').hide()
+						$('#i126299_Notes').checktrigger('mychange', ['both'])
+						//hide 126335  (Type: textarea)
+
+						if ($('#i126335_FreeVolunteer').attr('orig') == 'checked')
+							$('#i126335_FreeVolunteer').attr('checked', 'checked')
+						else $('#i126335_FreeVolunteer').removeAttr('checked')
+
+						$('#row_i126335_FreeVolunteer').hide()
+						$('#i126335_FreeVolunteer').checktrigger('mychange', ['both'])
+					}
+				})
+				$('#i126335_FreeVolunteer').bind(
+					'mychange',
+					function (event, triggers) {
+						if ($('#i126335_FreeVolunteer').is(':checked')) {
+							//Show o126296_102348  (Type: checkbox), . showfunc = show(), hidefunc=hide(), effect = None
+							$('#i126296_Hours_2')
+								.closest('select')
+								.attachOptions('#i126296_Hours_2')
+							//hiding o126296_102300  (Type: select)
+							//***  ***
+
+							if ($('#i126296_Hours_8').attr('orig') == 'selected')
+								$('#i126296_Hours_8').attr('selected', 'selected')
+							else $('#i126296_Hours_8').removeAttr('selected')
+
+							$('#i126296_Hours_8')
+								.closest('select')
+								.detachOptions('#i126296_Hours_8') //hidefunc
+							$('#i126296_Hours').checktrigger('mychange', ['both'])
+						} else {
+							// no match
+							//show o126296_102300  (Type: select)
+							$('#i126296_Hours_8')
+								.closest('select')
+								.attachOptions('#i126296_Hours_8')
+							//hide o126296_102348  (Type: select)
+
+							if ($('#i126296_Hours_2').attr('orig') == 'selected')
+								$('#i126296_Hours_2').attr('selected', 'selected')
+							else $('#i126296_Hours_2').removeAttr('selected')
+
+							$('#i126296_Hours_2')
+								.closest('select')
+								.detachOptions('#i126296_Hours_2')
+							$('#i126296_Hours').checktrigger('mychange', ['both'])
+						}
+					},
+				)
 				$('.p126273_TicketType').bind('mychange', function (event, triggers) {
 					if (
 						typeof $('.p126273_TicketType:first-child')[0] !== 'undefined' &&
@@ -4317,7 +4438,7 @@
 						p126273_TicketType.match(/Full Pass/) ||
 						p126273_TicketType.match(/Learner Pass/)
 					) {
-						//Show 126311  (Type: information), . showfunc = show(), hidefunc=hide(), effect = None
+						//Show 126311  (Type: select), . showfunc = show(), hidefunc=hide(), effect = None
 						$('#row_i126311_Track').show()
 						//Show o126311_102324  (Type: radioGroup), . showfunc = show(), hidefunc=hide(), effect = None
 						$('#i126311_Track_Paella, #label_i126311_Track_Paella').show()
@@ -4491,14 +4612,6 @@
 					}
 				})
 
-				$('#i126295_Volunteering').keyup(function () {
-					$(this).checktrigger('mychange', ['both'])
-				})
-				$('#i126295_Volunteering').change(function () {
-					$(this).checktrigger('mychange', ['both'])
-				})
-				$('#i126295_Volunteering').checktrigger('mychange', '')
-
 				$('#i126270_Country').keyup(function () {
 					$(this).checktrigger('mychange', ['both'])
 				})
@@ -4539,6 +4652,22 @@
 				})
 				$('.p126273_TicketType').checktrigger('mychange', '')
 
+				$('#i126295_Volunteering').keyup(function () {
+					$(this).checktrigger('mychange', ['both'])
+				})
+				$('#i126295_Volunteering').change(function () {
+					$(this).checktrigger('mychange', ['both'])
+				})
+				$('#i126295_Volunteering').checktrigger('mychange', '')
+
+				$('#i126335_FreeVolunteer').keyup(function () {
+					$(this).checktrigger('mychange', ['both'])
+				})
+				$('#i126335_FreeVolunteer').change(function () {
+					$(this).checktrigger('mychange', ['both'])
+				})
+				$('#i126335_FreeVolunteer').checktrigger('mychange', '')
+
 				$('#p126307_Strictly').keyup(function () {
 					$(this).checktrigger('mychange', ['both'])
 				})
@@ -4573,32 +4702,45 @@
 			ga('send', 'pageview')
 		</script>
 
+		<div id="clone_wrapper_i126334_Availability" style="display: none">
+			<select id="clone_i126334_Availability">
+				<option id="i126334_Availability_Before" value="Before">
+					Before the event | Avant l'événement
+				</option>
+				<option id="i126334_Availability_During" value="During">
+					During the event | Pendant l'événement
+				</option>
+				<option id="i126334_Availability_After" value="After">
+					After the event | Après l'événement
+				</option>
+			</select>
+		</div>
 		<div id="clone_wrapper_i126297_Department" style="display: none">
 			<select id="clone_i126297_Department">
-				<option id="clone_i126297_Department_reception" value="reception">
+				<option id="i126297_Department_reception" value="reception">
 					Reception | Réception
 				</option>
-				<option id="clone_i126297_Department_maintenance" value="maintenance">
+				<option id="i126297_Department_maintenance" value="maintenance">
 					Maintenance | Entretien
 				</option>
-				<option id="clone_i126297_Department_food" value="food">
+				<option id="i126297_Department_food" value="food">
 					Food | Nourriture
 				</option>
-				<option id="clone_i126297_Department_errands" value="errands">
+				<option id="i126297_Department_errands" value="errands">
 					Errands &amp; driving | Courses et transport
 				</option>
-				<option id="clone_i126297_Department_Bar" value="Bar">Bar</option>
-				<option id="clone_i126297_Department_saferspaces" value="safer-spaces">
+				<option id="i126297_Department_Bar" value="Bar">Bar</option>
+				<option id="i126297_Department_saferspaces" value="safer-spaces">
 					Security, Consent &amp; Inclusion | Sécurité, consentement et inclus
 				</option>
 			</select>
 		</div>
 		<div id="clone_wrapper_i126296_Hours" style="display: none">
 			<select id="clone_i126296_Hours">
-				<option id="clone_i126296_Hours_" value=""></option>
-				<option id="clone_i126296_Hours_2" value="2">2h</option>
-				<option id="clone_i126296_Hours_4" value="4">4h</option>
-				<option id="clone_i126296_Hours_6" value="6">6h</option>
+				<option id="i126296_Hours_" value=""></option>
+				<option id="i126296_Hours_2" value="2">2h</option>
+				<option id="i126296_Hours_4" value="4">4h</option>
+				<option id="i126296_Hours_6" value="6">6h</option>
 				<option id="clone_i126296_Hours_8" value="8">8h</option>
 			</select>
 		</div>
