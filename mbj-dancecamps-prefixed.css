@@ -289,6 +289,10 @@ select[multiple='multiple'] {
 	overflow: hidden;
 }
 
+select[multiple='multiple'][name='i126334_Availability[]'] {
+	height: 85px;
+}
+
 select[multiple='multiple'] option {
 	padding: var(--spacing-xsm);
 }
@@ -390,8 +394,8 @@ input[type='submit']:hover {
 #row_i119873_Privacy,
 #row_i126295_Volunteering,
 #row_i119921_Allergies,
-#row_i126298_Timeframe,
-#row_i126304_Confirmation {
+#row_i126304_Confirmation,
+#row_i126335_Paid {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -405,12 +409,6 @@ input[type='submit']:hover {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-}
-
-#row_i126298_Timeframe[style='display: block;'] {
-	display: -webkit-box !important;
-	display: -ms-flexbox !important;
-	display: flex !important;
 }
 
 #row_i119817_Terms .itemdescriptioncell,
@@ -431,15 +429,15 @@ input[type='submit']:hover {
 #row_i119873_Privacy .inputcell,
 #row_i126295_Volunteering .itemdescriptioncell,
 #row_i119921_Allergies .itemdescriptioncell,
-#row_i126298_Timeframe .itemdescriptioncell,
-#row_i126304_Confirmation .itemdescriptioncell {
+#row_i126304_Confirmation .itemdescriptioncell,
+#row_i126335_Paid .itemdescriptioncell {
 	margin-bottom: 0;
 }
 
 #row_i119817_Terms .inputcell span p,
 #row_i119873_Privacy .inputcell span p,
-#row_i126295_Volunteering .itemdescriptioncell span p,
-#row_i126298_Timeframe .itemdescriptioncell span p {
+#row_i126335_Paid .inputcell span p,
+#row_i126295_Volunteering .itemdescriptioncell span p {
 	height: var(--spacing-lg);
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -452,7 +450,7 @@ input[type='submit']:hover {
 #row_i119817_Terms .inputcell,
 #row_i119873_Privacy .inputcell,
 #row_i126295_Volunteering .inputcell,
-#row_i126298_Timeframe .inputcell,
+#row_i126335_Paid .inputcell,
 #row_i126304_Confirmation .inputcell {
 	width: 30px;
 }

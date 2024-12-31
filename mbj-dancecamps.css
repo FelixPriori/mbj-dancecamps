@@ -264,6 +264,10 @@ select[multiple='multiple'] {
 	overflow: hidden;
 }
 
+select[multiple='multiple'][name='i126334_Availability[]'] {
+	height: 85px;
+}
+
 select[multiple='multiple'] option {
 	padding: var(--spacing-xsm);
 }
@@ -357,16 +361,12 @@ input[type='submit']:hover {
 #row_i119873_Privacy,
 #row_i126295_Volunteering,
 #row_i119921_Allergies,
-#row_i126298_Timeframe,
-#row_i126304_Confirmation {
+#row_i126304_Confirmation,
+#row_i126335_Paid {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: flex-end;
 	align-items: center;
-}
-
-#row_i126298_Timeframe[style='display: block;'] {
-	display: flex !important;
 }
 
 #row_i119817_Terms .itemdescriptioncell,
@@ -387,15 +387,15 @@ input[type='submit']:hover {
 #row_i119873_Privacy .inputcell,
 #row_i126295_Volunteering .itemdescriptioncell,
 #row_i119921_Allergies .itemdescriptioncell,
-#row_i126298_Timeframe .itemdescriptioncell,
-#row_i126304_Confirmation .itemdescriptioncell {
+#row_i126304_Confirmation .itemdescriptioncell,
+#row_i126335_Paid .itemdescriptioncell {
 	margin-bottom: 0;
 }
 
 #row_i119817_Terms .inputcell span p,
 #row_i119873_Privacy .inputcell span p,
-#row_i126295_Volunteering .itemdescriptioncell span p,
-#row_i126298_Timeframe .itemdescriptioncell span p {
+#row_i126335_Paid .inputcell span p,
+#row_i126295_Volunteering .itemdescriptioncell span p {
 	height: var(--spacing-lg);
 	display: flex;
 	align-items: center;
@@ -404,7 +404,7 @@ input[type='submit']:hover {
 #row_i119817_Terms .inputcell,
 #row_i119873_Privacy .inputcell,
 #row_i126295_Volunteering .inputcell,
-#row_i126298_Timeframe .inputcell,
+#row_i126335_Paid .inputcell,
 #row_i126304_Confirmation .inputcell {
 	width: 30px;
 }
