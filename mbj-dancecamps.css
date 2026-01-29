@@ -362,7 +362,10 @@ input[type='submit']:hover {
 #row_i132312_Volunteering,
 #row_i119921_Allergies,
 #row_i132321_Confirmation,
-#row_i132315_FreeVolunteer {
+#row_i132315_FreeVolunteer,
+#row_i133213_NeedsHelpWithEnglish,
+#row_i133211_CanHelpTranslate,
+#row_i133212_NeedsHelpWithFrench {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: flex-end;
@@ -388,14 +391,20 @@ input[type='submit']:hover {
 #row_i132312_Volunteering .itemdescriptioncell,
 #row_i119921_Allergies .itemdescriptioncell,
 #row_i132321_Confirmation .itemdescriptioncell,
-#row_i132315_FreeVolunteer .itemdescriptioncell {
+#row_i132315_FreeVolunteer .itemdescriptioncell,
+#row_i133213_NeedsHelpWithEnglish .itemdescriptioncell,
+#row_i133211_CanHelpTranslate .itemdescriptioncell,
+#row_i133212_NeedsHelpWithFrench .itemdescriptioncell {
 	margin-bottom: 0;
 }
 
 #row_i119817_Terms .inputcell span p,
 #row_i119873_Privacy .inputcell span p,
 #row_i132315_FreeVolunteer .inputcell span p,
-#row_i132312_Volunteering .itemdescriptioncell span p {
+#row_i132312_Volunteering .itemdescriptioncell span p,
+#row_i133213_NeedsHelpWithEnglish .itemdescriptioncell span p,
+#row_i133211_CanHelpTranslate .itemdescriptioncell span p,
+#row_i133212_NeedsHelpWithFrench .itemdescriptioncell span p {
 	height: var(--spacing-lg);
 	display: flex;
 	align-items: center;
@@ -405,7 +414,10 @@ input[type='submit']:hover {
 #row_i119873_Privacy .inputcell,
 #row_i132312_Volunteering .inputcell,
 #row_i132315_FreeVolunteer .inputcell,
-#row_i132321_Confirmation .inputcell {
+#row_i132321_Confirmation .inputcell,
+#row_i133213_NeedsHelpWithEnglish .inputcell,
+#row_i133211_CanHelpTranslate .inputcell,
+#row_i133212_NeedsHelpWithFrench .inputcell {
 	width: 30px;
 }
 
